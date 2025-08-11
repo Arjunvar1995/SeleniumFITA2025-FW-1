@@ -1,10 +1,6 @@
 package redBus.pageObjects;
 
-import java.util.List;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -41,7 +37,7 @@ public class busAndPassengerDetailsPage extends abstractComponents{
 	@FindBy(xpath="//input[@placeholder='Phone']")
 	WebElement enterPhone;
 	
-	@FindBy(xpath="//label[text()='State of Residence']")
+	@FindBy(xpath="//label[text()='State of Residence']//following-sibling::input")
 	WebElement stateDD;
 	
 	@FindBy(xpath="//div[text()='Tamil Nadu']")

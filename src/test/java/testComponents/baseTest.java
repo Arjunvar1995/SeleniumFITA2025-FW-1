@@ -46,6 +46,12 @@ public class baseTest {
 		return driver;
 		
 	}
+	
+	public void newMethod() {
+		
+		
+		
+	}
 
 
 
